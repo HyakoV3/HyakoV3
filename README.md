@@ -6,6 +6,7 @@
 
 Most of my work lives in private repositories, so my contribution graph says almost nothing about me. This page is the honest version of what's behind it.
 
+<!-- METRICS: reativar assim que github-metrics.svg for gerado pelo workflow
 ---
 
 ## By the numbers
@@ -13,6 +14,7 @@ Most of my work lives in private repositories, so my contribution graph says alm
 ![Metrics](github-metrics.svg)
 
 <sub>Generated daily. Includes private repositories in aggregate — counts and languages only, never names.</sub>
+-->
 
 ---
 

@@ -6,6 +6,7 @@
 
 A maior parte do meu trabalho vive em repositórios privados, então meu gráfico de contribuições não diz quase nada sobre mim. Esta página é a versão honesta do que está por trás dele.
 
+<!-- METRICS: reativar assim que github-metrics.svg for gerado pelo workflow
 ---
 
 ## Em números
@@ -13,6 +14,7 @@ A maior parte do meu trabalho vive em repositórios privados, então meu gráfic
 ![Métricas](github-metrics.svg)
 
 <sub>Gerado diariamente. Inclui repositórios privados de forma agregada — contagens e linguagens, nunca nomes.</sub>
+-->
 
 ---
 
