@@ -42,10 +42,6 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_ignored: html, css, makefile, dockerfile, plpgsql, sqlpl
 
-          # ── VOLUME DE CÓDIGO ─────────────────────────────────────────
-          plugin_lines: yes
-          plugin_lines_sections: history   # "base" só renderiza dentro do base:repositories (desligado); "repositories" vazaria nomes
-          plugin_lines_history_limit: 7     # 2020→hoje: início dos repos próprios
 
           # ── RITMO ────────────────────────────────────────────────────
           plugin_isocalendar: yes           # último ano em 3D + streaks/pico por dia
