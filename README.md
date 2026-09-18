@@ -2,9 +2,29 @@
 
 **English** · [Português](README.pt-BR.md)
 
-**Infrastructure & backend engineer.** I run a small, self-hosted production fleet — and I treat "small" as an engineering constraint, not an excuse.
+**Backend engineer — and my own infrastructure team.** Java and Go services in production, on a small self-hosted fleet I treat as an engineering constraint, not an excuse.
 
 Most of my work lives in private repositories. The contribution graph shows the volume; this page is what's behind it.
+
+
+---
+
+## What I build
+
+**Java is where most of my code lives.** Spring Boot services backed by PostgreSQL: JPA, versioned schema migrations with Flyway, Spring Security with an external identity provider, Redis for caching, Actuator for health and metrics. Each one ships as a full application — Java API, Vue/TypeScript frontend, nginx, all defined in Compose and deployed to a self-hosted control plane behind my own DNS.
+
+**Go for the parts that need throughput** — long-running workers and integration services where a JVM per process would be the wrong trade.
+
+**Media automation pipeline** — ~18k lines of Bash and Python around ffmpeg: loudness normalization, subtitle generation and cleanup through LLM calls, and an audit trail of every model invocation in SQLite, so cost and quality are measurable instead of vibes.
+
+## What I actually run
+
+A six-host fleet (home + cloud), hosts named after a Norse pantheon because infrastructure you can't name is infrastructure you can't talk about at 3 a.m.
+
+- **~60 containerized services across 26 Compose stacks** — layered networks, only the reverse proxy exposed to the internet, secrets never committed.
+- **Three reverse proxies in production** (Traefik, Caddy, and a PaaS-managed Traefik), because the right ingress depends on who has to operate it, not on what's trendy.
+- **Authoritative DNS I own end to end**, plus firewall, fail2ban, and per-host recovery docs for the state that Compose files can't capture.
+- **Full-fleet ARM64 → x86_64 migration**, planned in phases and executed without losing a service — the old nodes were deleted only after the new ones proved themselves.
 
 ---
 
@@ -16,40 +36,13 @@ Most of my work lives in private repositories. The contribution graph shows the 
 
 ---
 
-## What I actually run
-
-A six-host fleet (home + cloud), hosts named after a Norse pantheon because infrastructure you can't name is infrastructure you can't talk about at 3 a.m.
-
-- **~60 containerized services across 26 Compose stacks** — layered networks, only the reverse proxy exposed to the internet, secrets never committed.
-- **Three reverse proxies in production** (Traefik, Caddy, and a PaaS-managed Traefik), because the right ingress depends on who has to operate it, not on what's trendy.
-- **Authoritative DNS I own end to end**, plus firewall, fail2ban, and per-host recovery docs for the state that Compose files can't capture.
-- **Full-fleet ARM64 → x86_64 migration**, planned in phases and executed without losing a service — the old nodes were deleted only after the new ones proved themselves.
-
-## What I build
-
-**Media automation pipeline** — ~18k lines of Bash and Python around ffmpeg: loudness normalization, subtitle generation and cleanup through LLM calls, and an audit trail of every model invocation in SQLite, so cost and quality are measurable instead of vibes.
-
-**Application work** — Go services, Java backends, Vue/TypeScript frontends, PostgreSQL. Containerized, deployed through a self-hosted control plane, behind my own DNS.
-
----
-
 ## Toolbox
 
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Java](https://img.shields.io/badge/Java-E76F00?style=flat-square&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+**Languages** — Java · Go · TypeScript/Vue · Python · Bash
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat-square&logo=traefikproxy&logoColor=white)
-![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-1A1A1A?style=flat-square&logo=linux&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![ffmpeg](https://img.shields.io/badge/ffmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
-![Vim](https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white)
+**Infrastructure** — Docker Compose · Traefik · Caddy · Linux · authoritative DNS
+
+**Data & media** — PostgreSQL · Redis · SQLite · ffmpeg
 
 ---
 
