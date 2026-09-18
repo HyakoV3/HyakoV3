@@ -8,6 +8,14 @@ A maior parte do meu trabalho vive em repositórios privados, então meu gráfic
 
 ---
 
+## Em números
+
+![Métricas](github-metrics.svg)
+
+<sub>Gerado diariamente. Inclui repositórios privados de forma agregada — contagens e linguagens, nunca nomes.</sub>
+
+---
+
 ## O que eu realmente opero
 
 Uma frota de seis hosts (casa + nuvem), com nomes tirados do panteão nórdico — porque infraestrutura que você não consegue nomear é infraestrutura sobre a qual você não consegue conversar às 3 da manhã.

@@ -8,6 +8,14 @@ Most of my work lives in private repositories, so my contribution graph says alm
 
 ---
 
+## By the numbers
+
+![Metrics](github-metrics.svg)
+
+<sub>Generated daily. Includes private repositories in aggregate — counts and languages only, never names.</sub>
+
+---
+
 ## What I actually run
 
 A six-host fleet (home + cloud), hosts named after a Norse pantheon because infrastructure you can't name is infrastructure you can't talk about at 3 a.m.
