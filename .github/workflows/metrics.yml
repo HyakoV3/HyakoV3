@@ -15,7 +15,7 @@ jobs:
       # commits desde 2023-12. A v3.34 e a imagem v3.35-beta clonam SEM token
       # (falha em repo privado); o fix #1579 só existe no master, cujo
       # Dockerfile não builda mais em 2026 (nokogiri). O fork = master + Dockerfile.
-      - uses: HyakoV3/metrics@d218e13f5c96c4e985567ebf98adb0adc4d914eb
+      - uses: HyakoV3/metrics@4a12bae12c1273d4fd1a809118016b4071576150
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: HyakoV3
