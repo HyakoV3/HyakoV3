@@ -10,17 +10,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      # Pinado no HEAD do master (2023-12-18), não em release: a v3.34 e a
-      # imagem v3.35-beta clonam SEM token e falham em repo privado. O fix
-      # (#1579, commit 995dd4a) só existe no master e nunca foi publicado.
-      - uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      # Fork próprio, pinado por SHA: o upstream (lowlighter/metrics) está sem
+      # commits desde 2023-12. A v3.34 e a imagem v3.35-beta clonam SEM token
+      # (falha em repo privado); o fix #1579 só existe no master, cujo
+      # Dockerfile não builda mais em 2026 (nokogiri). O fork = master + Dockerfile.
+      - uses: HyakoV3/metrics@4abddf4de9103bb7163b9f4ef6c37d398d44a5bc
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: HyakoV3
           filename: github-metrics.svg
           template: classic
           config_timezone: America/Sao_Paulo
-          use_prebuilt_image: no   # obrigatório: imagem do ghcr é anterior ao fix
 
           # ── ANONIMATO ────────────────────────────────────────────────
           # base vazio de propósito: as seções padrão "activity" e
