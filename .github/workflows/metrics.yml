@@ -7,7 +7,7 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    timeout-minutes: 45   # build ~10 min + análise ≤15 min; nunca mais 6 h pendurado
+    timeout-minutes: 60   # build ~5 min + análise ≤35 min; nunca mais 6 h pendurado
     permissions:
       contents: write
     steps:
@@ -35,7 +35,7 @@ jobs:
           # ── LINGUAGENS (agregado, inclui privados via PAT) ───────────
           plugin_languages: yes
           plugin_languages_indepth: yes
-          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout: 35   # ~2.6k commits; com 15 ficava parcial
           plugin_languages_colors: rainbow
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
@@ -43,7 +43,8 @@ jobs:
 
           # ── VOLUME DE CÓDIGO ─────────────────────────────────────────
           plugin_lines: yes
-          plugin_lines_sections: base      # "repositories" vazaria nomes
+          plugin_lines_sections: history   # "base" só renderiza dentro do base:repositories (desligado); "repositories" vazaria nomes
+          plugin_lines_history_limit: 3
 
           # ── RITMO ────────────────────────────────────────────────────
           plugin_isocalendar: yes
