@@ -4,7 +4,7 @@
 
 **Infrastructure & backend engineer.** I run a small, self-hosted production fleet — and I treat "small" as an engineering constraint, not an excuse.
 
-Most of my work lives in private repositories, so my contribution graph says almost nothing about me. This page is the honest version of what's behind it.
+Most of my work lives in private repositories. The contribution graph shows the volume; this page is what's behind it.
 
 <!-- METRICS: reativar assim que github-metrics.svg for gerado pelo workflow
 ---

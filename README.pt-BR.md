@@ -4,7 +4,7 @@
 
 **Engenheiro de infraestrutura e backend.** Opero uma frota de produção self-hosted pequena — e trato "pequena" como restrição de engenharia, não como desculpa.
 
-A maior parte do meu trabalho vive em repositórios privados, então meu gráfico de contribuições não diz quase nada sobre mim. Esta página é a versão honesta do que está por trás dele.
+A maior parte do meu trabalho vive em repositórios privados. O gráfico de contribuições mostra o volume; esta página mostra o que está por trás dele.
 
 <!-- METRICS: reativar assim que github-metrics.svg for gerado pelo workflow
 ---
