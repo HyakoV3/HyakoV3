@@ -4,6 +4,12 @@ on:
   schedule: [{cron: "0 9 * * *"}]   # 06:00 America/Sao_Paulo
   workflow_dispatch:
 
+# Nunca dois runs em paralelo: o segundo falha ao commitar o SVG (SHA mismatch).
+# O cron pode atrasar horas e colidir com um disparo manual.
+concurrency:
+  group: metrics
+  cancel-in-progress: false   # enfileira em vez de matar
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
