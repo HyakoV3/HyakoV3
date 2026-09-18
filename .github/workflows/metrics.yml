@@ -17,6 +17,7 @@ jobs:
           filename: github-metrics.svg
           template: classic
           config_timezone: America/Sao_Paulo
+          debug: yes   # TEMPORÁRIO — remover após diagnóstico
 
           # ── ANONIMATO ────────────────────────────────────────────────
           # base vazio de propósito: as seções padrão "activity" e
@@ -44,8 +45,3 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
