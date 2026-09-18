@@ -57,4 +57,4 @@ A six-host fleet (home + cloud), hosts named after a Norse pantheon because infr
 
 <sub>Repositories here are private by design — client and infrastructure work. Happy to walk through architecture, trade-offs, and failure modes in a conversation.</sub>
 
-📫 **Contact:** [LinkedIn](https://linkedin.com/in/CHANGE-ME) · CHANGE-ME@example.com
+📫 **Contact:** [LinkedIn](https://linkedin.com/in/edu-costa-garcia/) · edicgarcia@gmail.com
