@@ -45,9 +45,12 @@ jobs:
           # ── VOLUME DE CÓDIGO ─────────────────────────────────────────
           plugin_lines: yes
           plugin_lines_sections: history   # "base" só renderiza dentro do base:repositories (desligado); "repositories" vazaria nomes
-          plugin_lines_history_limit: 3
+          plugin_lines_history_limit: 7     # 2020→hoje: início dos repos próprios
 
           # ── RITMO ────────────────────────────────────────────────────
-          plugin_isocalendar: yes
+          plugin_isocalendar: yes           # último ano em 3D + streaks/pico por dia
           plugin_isocalendar_duration: full-year
+
+          plugin_calendar: yes              # heatmap por ano, retroativo
+          plugin_calendar_limit: 0          # 0 = todos os anos desde o cadastro (2018)
 
