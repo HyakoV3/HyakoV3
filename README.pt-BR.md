@@ -6,7 +6,6 @@
 
 A maior parte do meu trabalho vive em repositórios privados. O gráfico de contribuições mostra o volume; esta página mostra o que está por trás dele.
 
-<!-- METRICS: reativar assim que github-metrics.svg for gerado pelo workflow
 ---
 
 ## Em números
@@ -14,7 +13,6 @@ A maior parte do meu trabalho vive em repositórios privados. O gráfico de cont
 ![Métricas](github-metrics.svg)
 
 <sub>Gerado diariamente. Inclui repositórios privados de forma agregada — contagens e linguagens, nunca nomes.</sub>
--->
 
 ---
 

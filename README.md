@@ -6,7 +6,6 @@
 
 Most of my work lives in private repositories. The contribution graph shows the volume; this page is what's behind it.
 
-<!-- METRICS: reativar assim que github-metrics.svg for gerado pelo workflow
 ---
 
 ## By the numbers
@@ -14,7 +13,6 @@ Most of my work lives in private repositories. The contribution graph shows the 
 ![Metrics](github-metrics.svg)
 
 <sub>Generated daily. Includes private repositories in aggregate — counts and languages only, never names.</sub>
--->
 
 ---
 
