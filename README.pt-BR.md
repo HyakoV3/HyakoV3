@@ -70,4 +70,4 @@ Uma frota de seis hosts (casa + nuvem), com nomes tirados do panteão nórdico �
 
 <sub>Os repositórios aqui são privados por decisão — trabalho de cliente, de setor público e de infraestrutura. Converso com prazer sobre arquitetura, trade-offs e modos de falha.</sub>
 
-📫 **Contato:** [LinkedIn](https://linkedin.com/in/edu-costa-garcia/) · edicgarcia@outlook.com
+📫 **Contato:** edicgarcia@outlook.com
